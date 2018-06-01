@@ -53,11 +53,14 @@ $ cd ~
 $ git clone https://github.com/zzulu/insta-jeju
 ``` 
 
+프로젝트를 가져온 후, 개발을 하면서 사용하였던 `master.key` 파일의 내용을 복사하여 `master.key` 파일을 config 폴더 안에 생성하고 붙여넣는다.
+
 #### 2.3.2. Auto Server Setup Script 가져오기
 
 `git clone` 명령어로 Auto Server Setup Script를 가져온다. 지금 보고 있는 이 문서의 repository에 포함되어 있다.
 
 ```console
+$ cd ~
 $ git clone https://github.com/zzulu/ride-on-lightsail.git
 ```
 
@@ -77,7 +80,7 @@ $ sh ./scripts/1_rbenv.sh
 
 #### 2.3.3. shell 새로고침
 
-`rbenv.sh`에서 많은 것들을 설치하였는데, 그것들을 사용하기 위하여 shell을 refresh 해주자. 가끔 프로그램을 설치하고 컴퓨터를 재부팅 해주는 것과 같은 이유이다.
+`1_rbenv.sh`에서 많은 것들을 설치하였는데, 그것들을 사용하기 위하여 shell을 refresh 해주자. 가끔 프로그램을 설치하고 컴퓨터를 재부팅 해주는 것과 같은 이유이다.
 
 ```console
 $ exec $SHELL
@@ -92,7 +95,7 @@ $ exec $SHELL
 기본적인 gem을 위한 프로그램들은 스크립트 안에서 미리 설치하도록 되어있지만, 사용자가 별도로 추가한 gem은 경우에 따라 추가적인 gem이나 프로그램이 필요할 수 있다. 
 
 ```console
-$ ./scripts/2_ruby_rails_nginx.sh PROJECT-FOLDER-NAME
+$ sh ./scripts/2_ruby_rails_nginx.sh PROJECT-FOLDER-NAME
 ```
 
 시간이 조금 걸리는데, 모든 과정을 마치면 브라우저에서 Lightsail의 Public IP로 접속을 하여 Application이 돌아가는 것을 확인 할 수 있다.
