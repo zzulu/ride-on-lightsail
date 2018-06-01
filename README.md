@@ -86,7 +86,7 @@ $ sh ./scripts/1_rbenv.sh
 $ exec $SHELL
 ```
 
-### 2.3.4. 2_ruby_rails_nginx.sh 실행
+#### 2.3.4. 2_ruby_rails_nginx.sh 실행
 
 `2_ruby_rails_nginx.sh`를 실행하여 나머지 부분의 설정을 계속하자.
 `2_ruby_rails_nginx.sh`에는 `2.3.1. 프로젝트 가져오기`에서 가져온 프로젝트의 이름을 함께 넣어주어야 하는데 **PROJECT-FOLDER-NAME**은 `git clone`하였을때, 받아지는 github repository의 이름이다. `ls` 명령어로 확인이 가능하다.
