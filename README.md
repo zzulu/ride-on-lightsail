@@ -70,7 +70,7 @@ $ git clone https://github.com/zzulu/ride-on-lightsail.git
 $ cd ~/ride-on-lightsail
 ```
 
-#### 2.3.2. 1_rbenv.sh 실행
+#### 2.3.3. 1_rbenv.sh 실행
 
 서버 설정을 매우 편리하게 해주기 위하여 script를 작성하였다. 아까 받은 Script를 실행하면 모든 설정이 자동으로 될 것이다. `sh` 명령어를 사용하여 실행해보자. 우선 `1_rbenv.sh` 먼저.
 
@@ -78,7 +78,7 @@ $ cd ~/ride-on-lightsail
 $ sh ./scripts/1_rbenv.sh
 ```
 
-#### 2.3.3. shell 새로고침
+#### 2.3.4. shell 새로고침
 
 `1_rbenv.sh`에서 많은 것들을 설치하였는데, 그것들을 사용하기 위하여 shell을 refresh 해주자. 가끔 프로그램을 설치하고 컴퓨터를 재부팅 해주는 것과 같은 이유이다.
 
@@ -86,7 +86,7 @@ $ sh ./scripts/1_rbenv.sh
 $ exec $SHELL
 ```
 
-#### 2.3.4. 2_ruby_rails_nginx.sh 실행
+#### 2.3.5. 2_ruby_rails_nginx.sh 실행
 
 `2_ruby_rails_nginx.sh`를 실행하여 나머지 부분의 설정을 계속하자.
 `2_ruby_rails_nginx.sh`에는 `2.3.1. 프로젝트 가져오기`에서 가져온 프로젝트의 이름을 함께 넣어주어야 하는데 **PROJECT-FOLDER-NAME**은 `git clone`하였을때, 받아지는 github repository의 이름이다. `ls` 명령어로 확인이 가능하다.
@@ -100,7 +100,7 @@ $ sh ./scripts/2_ruby_rails_nginx.sh PROJECT-FOLDER-NAME
 
 시간이 조금 걸리는데, 모든 과정을 마치면 브라우저에서 Lightsail의 Public IP로 접속을 하여 Application이 돌아가는 것을 확인 할 수 있다.
 
-#### 2.3.5. Gem 설치 도중 error 발생 시
+#### 2.3.6. Gem 설치 도중 error 발생 시
 
 만약 gem 설치 도중 에러가 발생했다면, 에러를 수정한 후에 `2_ruby_rails_nginx.sh` 스크립트 파일을 다시 실행하여 남은 deploy 과정을 마무리한다.
 
